@@ -17,3 +17,12 @@ producto1.Stock = 100;
 producto1.MostrarInformation();
 producto1.DisminuirStock(13);
 producto1.MostrarInformation();
+
+Pedido pedido = new Pedido(1);
+pedido.AgregarItem(producto, 150);
+pedido.AgregarItem(producto1, 45);
+pedido.MostrarDetalles();
+
+Console.WriteLine("********** Actualización de Productos **********");
+producto.MostrarInformation();
+producto1.MostrarInformation();
