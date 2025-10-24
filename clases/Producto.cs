@@ -8,7 +8,7 @@ public class Producto
     /// <summary>
     /// Muestra la information del producto
     /// </summary>
-    public void MostrarInformation()
+    public virtual void MostrarInformation()
     {
         Console.WriteLine("********** DATOS DEL PRODUCTO **********");
         Console.WriteLine($"ID: {Id}");
