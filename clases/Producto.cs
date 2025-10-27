@@ -1,4 +1,4 @@
-public class Producto
+public abstract class Producto
 {
     public int Id { get; set; }
     public string? Nombre { get; set; }
@@ -8,7 +8,7 @@ public class Producto
     /// <summary>
     /// Muestra la information del producto
     /// </summary>
-    public virtual void MostrarInformation()
+    public abstract void MostrarInformation()
     {
         Console.WriteLine("********** DATOS DEL PRODUCTO **********");
         Console.WriteLine($"ID: {Id}");
