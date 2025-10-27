@@ -8,15 +8,7 @@ public abstract class Producto
     /// <summary>
     /// Muestra la information del producto
     /// </summary>
-    public abstract void MostrarInformation()
-    {
-        Console.WriteLine("********** DATOS DEL PRODUCTO **********");
-        Console.WriteLine($"ID: {Id}");
-        Console.WriteLine($"Nombre: {Nombre}");
-        Console.WriteLine($"Precio: {Precio}");
-        Console.WriteLine($"Cantidad disponible: {Stock}");
-        Console.WriteLine();
-    }
+    public abstract void MostrarInformation();
 
     /// <summary>
     /// Disminuye el inventario
