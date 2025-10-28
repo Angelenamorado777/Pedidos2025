@@ -1,4 +1,4 @@
-public abstract class Producto
+public abstract class Producto : IInformacionDetallada
 {
     public int Id { get; set; }
     public string? Nombre { get; set; }
@@ -25,5 +25,13 @@ public abstract class Producto
             Console.WriteLine($"No hay suficiente stock de {Nombre}");
             Console.WriteLine();
         }
+    }
+
+    public string ObtenerInformacionDetallada()
+    {
+        return $"ID: {Id}\n" +
+       $"Nombre: {Nombre}\n" +
+       $"Precio: {Precio:C}\n" +
+       $"Cantidad disponible: {Stock}";
     }
 }
