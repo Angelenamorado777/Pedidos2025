@@ -1,5 +1,6 @@
 ﻿// Creamos el objeto
 
+List<Producto> catalogoList = new List<Producto>();
 
 Electronico electronico = new Electronico();
 electronico.Id = 3;
@@ -9,6 +10,9 @@ electronico.Stock = 10;
 electronico.GarantiaMeses = 12;
 electronico.Voltaje = "110V";
 electronico.MostrarInformation();
+catologoList.Add(electronico);
+
+
 
 Pedido pedido = new Pedido(1);
 pedido.AgregarItem(electronico, 1);
